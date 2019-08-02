@@ -1,0 +1,16 @@
+{
+  "name": "Bounce2",
+  "keywords": "bounce, signal, input, ouput",
+  "description": "Debouncing library for Arduino or Wiring",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OS-Q/D204.git"
+  },
+  "version": "1.0.0",
+  "exclude": [
+    "*.png",
+    "*.zip"
+  ],
+  "frameworks": "arduino",
+  "platforms": "*"
+}
