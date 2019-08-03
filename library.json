@@ -1,16 +1,17 @@
 {
-  "name": "Bounce2",
+  "name": "gpio",
   "keywords": "bounce, signal, input, ouput",
-  "description": "Debouncing library for Arduino or Wiring",
+  "description": "gpio library for Arduino or Wiring",
+  "version": "1.0.0",
+  "authors": {
+    "name":  "qitas",
+    "email": "qitas@qitas.cn",
+    "url": "http://tang.qitas.cn"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/OS-Q/D204.git"
+    "url": "https://github.com/OS-Q/D93.git"
   },
-  "version": "1.0.0",
-  "exclude": [
-    "*.png",
-    "*.zip"
-  ],
   "frameworks": "arduino",
   "platforms": "*"
 }
