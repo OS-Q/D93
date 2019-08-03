@@ -1,4 +1,4 @@
-#include "Bounce2.h"
+#include "btn.h"
 
 static const uint8_t DEBOUNCED_STATE = 0b00000001;
 static const uint8_t UNSTABLE_STATE  = 0b00000010;

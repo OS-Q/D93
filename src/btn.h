@@ -1,5 +1,5 @@
-#ifndef Bounce2_h
-#define Bounce2_h
+#ifndef Btn_h
+#define Btn_h
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
@@ -7,51 +7,14 @@
 #include "WProgram.h"
 #endif
 
-// Uncomment the following line for "LOCK-OUT" debounce method
-//#define BOUNCE_LOCK_OUT
-
-// Uncomment the following line for "BOUNCE_WITH_PROMPT_DETECTION" debounce method
-//#define BOUNCE_WITH_PROMPT_DETECTION
-
 #include <inttypes.h>
 
-/**
-    @example bounce.ino
-    Simple example of the Bounce library that switches the debug LED when a button is pressed.
-*/
 
-/**
-    @example change.ino
-    This example toggles the debug LED (pin 13) on or off when a button on pin 2 is pressed.
-*/
-
-/**
-    @example bounce_multiple.ino
-    Detect the falling edge of multiple buttons. Eight buttons with internal pullups. Toggles a LED when any button is pressed. Buttons on pins 2,3,4,5,6,7,8,9
-*/
-
-/**
-    @example bounce2buttons.ino
-     Example of two instances of the Bounce class that switches the debug LED when either one of the two buttons is pressed.
- */
-
-/**
-     The Bounce class.
-     */
 class Bounce
 {
  public:
 
-/*!
-    @brief  Create an instance of the Bounce class.
 
-    @code
-
-    // Create an instance of the Bounce class.
-    Bounce() button;
-
-    @endcode
-*/
     Bounce();
 
 
