@@ -1,5 +1,5 @@
 {
-  "name": "gpio",
+  "name": "IO",
   "keywords": "bounce, signal, input, ouput",
   "description": "gpio library for Arduino or Wiring",
   "version": "1.0.0",
@@ -13,5 +13,5 @@
     "url": "https://github.com/OS-Q/D93.git"
   },
   "frameworks": "arduino",
-  "platforms": "*"
+  "platforms": "esp8266"
 }
