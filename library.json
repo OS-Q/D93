@@ -1,8 +1,8 @@
 {
   "name": "IO",
   "keywords": "bounce, signal, input, ouput",
-  "description": "gpio library for Arduino or Wiring",
-  "version": "1.0.0",
+  "description": "gpio library",
+  "version": "1.1.0",
   "authors": {
     "name":  "qitas",
     "email": "qitas@qitas.cn",
@@ -13,5 +13,5 @@
     "url": "https://github.com/OS-Q/D93.git"
   },
   "frameworks": "arduino",
-  "platforms": "esp8266"
+  "platforms": "espressif,esp8266,esp32"
 }
