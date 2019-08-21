@@ -1,9 +1,35 @@
+#include <Arduino.h>
 #include <eBtn.h>
 
+static  bool streamReceived;
+static  bool packetReceived;
 float n;
+
 // Initialization of an eBtn on pin 0;
-const int btnPin = 0;
+const int btnPin = 4;
 eBtn btn = eBtn(btnPin);
+
+inline void interupt_streamReceived() {
+    streamReceived = true;
+}
+
+inline void interupt_packetReceived() {
+    packetReceived = true;
+}
+
+/* Attach the interrupt from CC1101 when packet recieved */
+void attachGDO0Interrupt(void)
+{
+  Serial.println(F("Attaching Interrupt to GDO0"));
+  attachInterrupt(btnPin,interupt_packetReceived, FALLING); 
+  //attachInterrupt(CC1101_GDO0, interupt_packetReceived, FALLING);
+}
+
+void detachGDO0Interrupt(void)
+{
+  Serial.println(F("Detaching Interrupt to GDO0"));
+  detachInterrupt(btnPin);
+}
 
 void setup() {
 	Serial.begin(115200);	
@@ -13,7 +39,7 @@ void setup() {
 	btn.on("release",releaseFunc);
 	btn.on("long",longPressFunc);
 	//setting the interrupt on btn pin to react on change state
-	attachInterrupt(btnPin, pin_ISR, CHANGE);	
+	
 }
 
 //function to handle the interrupt event
